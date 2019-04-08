@@ -1,9 +1,9 @@
-var keyValue = function (obj) {
-  for (var key in obj) {
-  	if (Object.prototype.hasOwnProperty.call(obj, key)) {
-    	console.log('Our key is: ' + key + '.' + ' Its value is: ' + obj[key])
-	}
-  }
+function keyValue(obj) {
+    for (var key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            console.log(`${key}: ${obj[key]}`);
+        }
+    }
 }
 
 module.exports = keyValue;

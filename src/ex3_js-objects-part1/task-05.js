@@ -1,7 +1,7 @@
 function getCopyOfObject (obj) {
   var copyObj = {};
   for (var key in obj) {
-  	if (Object.prototype.hasOwnProperty.call(obj, key)) {
+  	if (obj.hasOwnProperty(key)) {
         copyObj[key]=obj[key];
     }
   }
