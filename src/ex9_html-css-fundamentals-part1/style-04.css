@@ -1,0 +1,46 @@
+div {
+	width: 450px;
+    height: 250px;
+    margin: 2%;
+}
+.jade-1 {
+	background-color: #60B88D;
+    box-shadow: 10px 10px 0 #90CDAF, 
+    			20px 20px 0 #BFE3D1;
+}
+.jade-2_1 {
+	position: relative;
+	background-color: #BFE3D1;
+	top: 50px;
+	left: 50px;
+}
+.jade-2_2 {
+	position: relative;
+	background-color: #90CDAF;
+	top: -10px;
+	left: -20px;
+}
+.jade-2_3 {
+	position: relative;
+	background-color: #60B88D;
+	top: -10px;
+	left: -20px;
+}
+.jade-3_1 {
+	position: absolute;
+	background-color: #BFE3D1;
+	top: 660px;
+	left: 100px;
+}
+.jade-3_2 {
+	position: absolute;
+	background-color: #90CDAF;
+	top: 650px;
+	left: 90px;
+}
+.jade-3_3 {
+	position: absolute;
+	background-color: #60B88D;
+	top: 640px;
+	left: 80px;
+}
