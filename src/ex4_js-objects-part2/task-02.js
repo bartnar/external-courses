@@ -1,5 +1,2 @@
-var createEmptyObj = function () {
-  var emptyObj = Object.create(null);
-return emptyObj;
-}
+var createEmptyObj = function () {return Object.create(null);}
 module.exports = createEmptyObj;
