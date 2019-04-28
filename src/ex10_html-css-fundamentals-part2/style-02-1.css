@@ -1,0 +1,46 @@
+body {
+  font-family: "Arial", sans;
+  color: #333333;
+}
+th {
+  height: 15px;
+  width: 130px;
+  text-transform: uppercase;
+  font-size: 12px;
+  background-color: #E3EAF3;
+}
+.mail {
+  width: 200px;
+}
+tr>th:nth-child(4) {
+  width: 120px;
+  text-align: center;
+}
+.name {
+  text-transform: capitalize;
+}
+tr {
+  background-color: #E3EAF3;
+}
+td {
+  height: 40px;
+}
+tr:nth-child(2n) {
+  background-color: #F2F6FA
+}
+.phone {
+  text-align: center;  
+}
+th:nth-child(4) {
+  text-align: start;
+}
+table {
+  border-collapse: collapse;
+}
+td, th {
+  padding: 5px;
+  border: 2px solid white;
+}
+td {
+  padding: 10px;
+}
