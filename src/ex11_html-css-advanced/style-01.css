@@ -1,0 +1,24 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+.cats {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 20px 0;
+}
+
+.img_container {
+	width: 500px;
+	height: 500px;
+	overflow: hidden;
+}
+
+.round {
+	border-radius: 50%;
+}
+.batman {
+	-webkit-mask: url(batman3_1200.png) 15% / cover;
+}
