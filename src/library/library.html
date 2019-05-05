@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Second task of 10th exercise" />
+    <meta name="keywords" content="HTML, CSS, JavaScript, EPAM" />
+    <meta name="author" content="Artyom Belyusov" />
+    <link rel="stylesheet" href="library-style.css" />
+    <title>Side bar</title>
+  </head>
+  <body>
+    <header>
+      <ul class="nav-links">
+        <li><a class="nav-link-a" href="#">Help Center</a></li>
+        <li><a class="nav-link-a" href="#">Our Support</a></li>
+        <li>
+          <a class="nav-link-a user-profile" href="#"
+            ><img class="nav-avatar" src="avatar.svg" alt="avatar" /> John Doe
+            <span class="nav-avatar-arrow"></span></a
+          >
+        </li>
+      </ul>
+    </header>
+    <div class="menu-plus-content-wrapper">
+      <div class="active-interaction-area">
+        <section class="content-wrapper">
+          <header class="content-wrapper-header">
+            <h1>Browse Available Books</h1>
+          </header>
+          <nav class="nav-content">
+            <ul class="content-menu">
+              <li class="content-menu-item"><a href="#">All Books</a></li>
+              <li class="content-menu-item"><a href="#">Most Recent</a></li>
+              <li class="content-menu-item"><a href="#">Most Popular</a></li>
+              <li class="content-menu-item"><a href="#">Free Books</a></li>
+            </ul>
+            <div class="content-search-wrapper">
+              <input
+                class="content-search"
+                type="text"
+                placeholder="Enter Keywords"
+              />
+              <span class="lens"></span>
+            </div>
+          </nav>
+        </section>
+        <section class="books-wrapper">
+          <div class="particular-book-wrapper">
+            <img src="book1.png" alt="" />
+            <div class="title">Jewels of Nizam</div>
+            <div class="author">by Geeta Devi</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book2.png" alt="" />
+            <div class="title">Cakes & Bakes</div>
+            <div class="author">by Geeta Devi</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book3.png" alt="" />
+            <div class="title">Jamie’s Kitchen</div>
+            <div class="author">by Jamie Oliver</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book4.png" alt="" />
+            <div class="title">Inexpensive Family Meals</div>
+            <div class="author">by Simon Holst</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book5.png" alt="" />
+            <div class="title">Paleo Slow Cooking</div>
+            <div class="author">by Chrissy Gower</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book6.png" alt="" />
+            <div class="title">Cook Like an Italian</div>
+            <div class="author">by Tobie Puttock</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book7.png" alt="" />
+            <div class="title">Suneeta Vaswani</div>
+            <div class="author">by Geeta Devi</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book8.png" alt="" />
+            <div class="title">Jamie Does</div>
+            <div class="author">by Jamie Oliver</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book9.png" alt="" />
+            <div class="title">Jamie’s italy</div>
+            <div class="author">by Jamie Oliver</div>
+            <span class="rating"></span>
+          </div>
+          <div class="particular-book-wrapper">
+            <img src="book10.png" alt="" />
+            <div class="title">Vegetables Cookbook</div>
+            <div class="author">by Matthew Biggs</div>
+            <span class="rating"></span>
+          </div>
+        </section>
+      </div>
+
+      <nav class="sidebar">
+        <div class="add-book">
+          <div class="add-button"><span>+</span>add a book</div>
+        </div>
+        <div class="separ_top"></div>
+        <div class="separator"></div>
+        <div class="separ_bot"></div>
+        <div class="menu-sidebar">
+          <ul>
+            <li class="menu-sidebar-item"><span></span>now reading</li>
+            <li class="menu-sidebar-item"><span></span>browse</li>
+            <li class="menu-sidebar-item"><span></span>buy books</li>
+            <li class="menu-sidebar-item"><span></span>favourite books</li>
+            <li class="menu-sidebar-item"><span></span>wishlist</li>
+            <li class="menu-sidebar-item"><span></span>history</li>
+          </ul>
+        </div>
+        <div class="separ_top"></div>
+        <div class="separator"></div>
+        <div class="separ_bot"></div>
+        <div class="sort-by-dots">
+          <ul>
+            <li><span class="red">•</span>must read titles</li>
+            <li><span class="yellow">•</span>best of list</li>
+            <li><span class="blue">•</span>classic novels</li>
+            <li><span class="purple">•</span>non fiction</li>
+          </ul>
+        </div>
+        <div class="separ_top"></div>
+        <div class="separator"></div>
+        <div class="separ_bot"></div>
+        <div class="menu-history-wrapper">
+          <div class="menu-history">
+            <span class="menu-history-icon"></span>
+            <div>
+              <span
+                >You added <b>Fight Club</b> by <b>Chuck Palahniuk</b> to your
+                <b>Must Read Titles.</b></span
+              >
+              <span>24 minutes ago</span>
+            </div>
+          </div>
+          <div class="menu-history">
+            <span class="menu-history-icon"></span>
+            <div>
+              <span
+                >You added <b>The Trial</b> by <b>Franz Kafka</b> to your
+                <b>Must Read Titles.</b></span
+              >
+              <span>48 minutes ago</span>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+
+    <footer>
+      <ul class="footer-links">
+        <li><a class="footer-link-a" href="#"></a></li>
+        <li><a class="footer-link-a" href="#"></a></li>
+      </ul>
+    </footer>
+  </body>
+</html>
