@@ -2,9 +2,9 @@ main {
   display: flex;
   flex-direction: column;
 }
-  .content {
-    display: flex;
-  }
+.content {
+  display: flex;
+}
 body {
   padding: 30px;
 }
@@ -15,7 +15,6 @@ section {
   background: lightgreen;
   flex: 1;
   width: 75%;
-  float: left;
 }
 article {
   background: white;
@@ -24,9 +23,10 @@ article {
 aside {
   background: pink;
   width: 25%;
-  float: right;
 }
-header, article, section, .module {
+header,
+article,
+section,
+.module {
   padding: 1rem;
 }
-

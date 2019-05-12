@@ -1,11 +1,13 @@
 body {
   padding: 30px;
 }
-main {
+.content {
   display: grid;
+  grid-template-areas:
+    "header header"
+    "section aside";
   grid-template-columns: auto 25%;
-  grid-template-areas: "header header"
-                       "section aside"
+  grid-template-rows: auto auto;
 }
 header {
   background: lightblue;
@@ -13,16 +15,19 @@ header {
 }
 section {
   background: lightgreen;
-  /*grid-area: section;*/ /*я так понял не обязательно*/
+  grid-area: section;
 }
 article {
   background: white;
-  margin: 0 0 1rem 0;
+  margin: 0 0 15px 0;
 }
 aside {
   background: pink;
-  /*grid-area: aside;*/ /*я так понял не обязательно*/
+  grid-area: aside;
 }
-header, article, section, .module {
-  padding: 1rem;
+header,
+article,
+section,
+.module {
+  padding: 15px;
 }
