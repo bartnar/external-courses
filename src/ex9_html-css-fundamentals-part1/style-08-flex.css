@@ -4,6 +4,7 @@ main {
 }
 .content {
   display: flex;
+  flex: 4;
 }
 body {
   padding: 30px;
@@ -13,7 +14,7 @@ header {
 }
 section {
   background: lightgreen;
-  flex: 1 1 75%;
+  flex: 3;
   /* width: 75%; */
 }
 article {
@@ -22,7 +23,7 @@ article {
 }
 aside {
   background: pink;
-  flex: 1 1 25%;
+  flex: 1;
   /* width: 25%; */
 }
 header,
