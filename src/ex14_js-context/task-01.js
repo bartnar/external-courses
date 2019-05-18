@@ -1,7 +1,7 @@
 var Calculator = {
   result: 0,
   isNumber: function(value) {
-    return !isNaN(value) && typeof value === "number";
+    return !isNaN(value) && typeof value === "number" && isFinite(value);
   },
   setState: function(argument) {
     if (this.isNumber(argument)) {
