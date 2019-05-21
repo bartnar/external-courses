@@ -1,0 +1,62 @@
+body {
+	font-family: "Arial", sans;
+}
+
+form {
+	width: 450px;
+}
+.about-required {
+	color: #D45252;
+}
+
+div:not(.about-required) {
+	display: flex;
+	margin: 10px 0 10px 0;
+}
+
+label {
+	margin-right: 15px;
+	width: 80px;
+}
+
+textarea {
+	resize: none;
+	border-radius: 5px;
+	border: 1px solid grey;
+}
+input {
+	border-radius: 5px;
+	border: 1px solid grey;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+.arrow-left {
+	position: relative;
+	font-size: 12px;
+	color: white;
+	left: 50px;
+	bottom: 5px;
+	border: 1px solid #D45252;
+	background-color: #D45252;
+	height: 15px;
+	padding: 0 5px 0 5px;
+	 
+}
+.arrow-left:after {
+	content: "";
+	position: absolute;
+	left: -6px;
+	top: 2px;
+  	width: 0; 
+  	height: 0; 
+  	border-top: 5px solid transparent;
+  	border-bottom: 5px solid transparent; 
+  	border-right: 5px solid #D45252;
+}
+.submit input {
+	background-color: #F2F2F2;
+	color: black;
+	font-weight: bold;
+	padding: 5px 25px 5px 25px;
+	margin-left: 40px;
+}

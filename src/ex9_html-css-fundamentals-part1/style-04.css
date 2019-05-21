@@ -1,0 +1,45 @@
+div {
+  width: 450px;
+  height: 250px;
+  margin: 2%;
+}
+.boxshadow-block {
+  background-color: #60b88d;
+  box-shadow: 10px 10px 0 #90cdaf, 20px 20px 0 #bfe3d1;
+}
+.relative-block-back {
+  position: relative;
+  background-color: #bfe3d1;
+  top: 50px;
+  left: 50px;
+}
+.relative-block-middle {
+  position: relative;
+  background-color: #90cdaf;
+  top: -10px;
+  left: -20px;
+}
+.relative-block-front {
+  position: relative;
+  background-color: #60b88d;
+  top: -10px;
+  left: -20px;
+}
+.absolute-block-back {
+  position: absolute;
+  background-color: #bfe3d1;
+  top: 660px;
+  left: 100px;
+}
+.absolute-block-middle {
+  position: absolute;
+  background-color: #90cdaf;
+  top: 650px;
+  left: 90px;
+}
+.absolute-block-front {
+  position: absolute;
+  background-color: #60b88d;
+  top: 640px;
+  left: 80px;
+}
