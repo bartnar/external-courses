@@ -104,8 +104,6 @@ header {
   background-color: #1f2637;
 }
 .add-button {
-  cursor: pointer;
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -121,21 +119,14 @@ header {
 .add-button span {
   margin-right: 15px;
 }
-.separ_top {
-  /*width: 200px;*/
-  height: 1px;
-  background-color: #141824;
-}
+
 .separator {
-  /*width: 200px;*/
   height: 4px;
   background-color: #181e2c;
+  border-top: 1px solid #141824;
+  border-bot: 1px solid #282f41;
 }
-.separ_bot {
-  /*width: 200px;*/
-  height: 1px;
-  background-color: #282f41;
-}
+
 .menu-sidebar {
   background-color: #1f2637;
   height: 220px;
@@ -174,7 +165,6 @@ header {
   display: flex;
   flex-wrap: nowrap;
   background-color: #1f2637;
-  /*width: 200px;*/
   height: auto;
 }
 .sort-by-dots ul {
@@ -193,21 +183,16 @@ header {
   padding-right: 10px;
 }
 .red {
-  align-self: center;
   color: #e64c66;
-  /*font-size: 24px;*/
 }
 .yellow {
   color: #ffab00;
-  /*font-size: 24px;*/
 }
 .blue {
   color: #00bfdd;
-  /*font-size: 24px;*/
 }
 .purple {
   color: #7874cf;
-  /*font-size: 24px;*/
 }
 .menu-history-wrapper {
   display: flex;
