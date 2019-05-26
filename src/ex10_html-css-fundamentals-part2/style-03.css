@@ -10,19 +10,7 @@ header {
   padding-bottom: 63px;
   margin-top: 60px;
 }
-.logo_ipad {
-  display: none;
-}
-.menu_ipad {
-  display: none;
-}
-.icons {
-  display: flex;
-  align-items: flex-end;
-}
-.icons img {
-  padding-left: 25px;
-}
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -51,9 +39,7 @@ a {
 .menu li:hover {
   background: url(arrow_up.svg) no-repeat center bottom;
 }
-.search_ipad {
-  display: none;
-}
+
 .search {
   margin-top: 40px;
 }
@@ -63,9 +49,7 @@ a {
 .search input {
   border: none;
 }
-.bckg_ipad {
-  display: none;
-}
+
 .background {
   width: 100%;
   display: block;
@@ -88,8 +72,7 @@ a {
   color: #6d6e71;
   padding-bottom: 20px;
 }
-.article1,
-.article2 {
+.article {
   display: flex;
   font-size: 16px;
   font-weight: 300;
@@ -97,22 +80,45 @@ a {
   width: 690px;
   height: 250px;
 }
-#lamp,
-#tree {
+.lamp,
+.tree {
   align-self: flex-start;
   padding-right: 30px;
   margin-left: 150px;
 }
-.article2 {
-  height: 150px;
-}
 
-@media screen and (min-width: 320px) and (max-width: 960px) {
+/*! iPad section */
+* {
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
+}
+.logo_ipad {
+  display: none;
+}
+.menu_ipad {
+  display: none;
+}
+.icons {
+  display: flex;
+  align-items: flex-end;
+}
+.icons img {
+  padding-left: 25px;
+}
+.search_ipad {
+  display: none;
+}
+.bckg_ipad {
+  display: none;
+}
+/*! iPad section */
+
+@media screen and (min-width: 800px) and (max-width: 960px) {
   .articlesWrapper {
     flex-direction: column;
   }
-  .article1,
-  .article2 {
+  .article {
     margin-top: 30px;
   }
   nav,
