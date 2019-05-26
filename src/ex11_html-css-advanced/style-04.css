@@ -18,8 +18,8 @@
   src: url(fonts/FontAwesome.otf);
 }
 * {
-  padding: 0;
-  margin: 0;
+  padding: 0px;
+  margin: 0px;
   font-family: "Proxima", sans-serif;
 }
 .sidebar {
@@ -150,8 +150,8 @@
   font-size: 18px;
   color: #78829d;
   display: block;
-  flex: 0 0 20px;
-  margin: 0 6px 0 0;
+  flex: 0px 0px 20px;
+  margin: 0px 6px 0px 0px;
 }
 
 .menu-history b {
@@ -164,7 +164,7 @@
 }
 
 .menu-history span:nth-child(2n) {
-  margin: 10px 0 0 0;
+  margin: 10px 0px 0px 0px;
 }
 
 .menu-plus-content-wrapper {
