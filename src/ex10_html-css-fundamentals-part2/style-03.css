@@ -1,178 +1,147 @@
 * {
-	padding: 0;
-	margin: 0;
-	font-family: "Open Sans";
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans";
 }
 header {
-	display: flex;
-	justify-content: space-around;
-	border-bottom: 2px solid #eceef4;
-	padding-bottom: 63px;
-	margin-top: 60px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 2px solid #eceef4;
+  padding-bottom: 63px;
+  margin-top: 60px;
 }
 .logo_ipad {
-	display: none;
+  display: none;
 }
 .menu_ipad {
-	display: none;
+  display: none;
 }
 .icons {
-	display: flex;
-	align-items: flex-end;
+  display: flex;
+  align-items: flex-end;
 }
 .icons img {
-	padding-left: 25px;
+  padding-left: 25px;
 }
 nav {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 
 .menu {
-	display: flex;
-	flex-direction: row;
-	font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  font-size: 13px;
 }
 .menu li {
-	display: flex;
-	height: 85px;
-	align-items: center;
-	border-right: 2px solid #eceef4;
-	padding: 0 20px 0 20px;
-	font-weight: bold;
-	text-align: center;
+  display: flex;
+  height: 85px;
+  align-items: center;
+  border-right: 2px solid #eceef4;
+  padding: 0 20px 0 20px;
+  font-weight: bold;
+  text-align: center;
 }
 a {
-	text-decoration: none;
-	font-weight: 700;
-	color: #6d6e71;
+  text-decoration: none;
+  font-weight: 700;
+  color: #6d6e71;
 }
 
 .menu li:hover {
-	background: url(arrow_up.svg) no-repeat center bottom;
+  background: url(arrow_up.svg) no-repeat center bottom;
 }
 .search_ipad {
-	display: none;
+  display: none;
 }
 .search {
-	margin-top: 40px;
+  margin-top: 40px;
 }
 .search img {
-	margin-right: 15px;
+  margin-right: 15px;
 }
 .search input {
-	border: none;
+  border: none;
 }
 .bckg_ipad {
-	display: none;
+  display: none;
 }
 .background {
-	width: 100%;
-	display: block;
-	position: relative;
+  width: 100%;
+  display: block;
+  position: relative;
 }
 .pc {
-	border: 0;
-	height: auto;
-	max-width: 100%;
-	z-index: -1;
-}
-/*.motto {
-	position: absolute;
-	padding: 10% 20% 0 30%;
-}*/
-/*.motto {
-	position: absolute;
-	padding: 10% 20% 0 30%;
-}
-.text {
-	position: relative;
-	font-size: 58px;
-	font-weight: 700;
-	color: #ffffff;
-	text-shadow: 1px 1px 8px rgba(1, 1, 1, 0.15);
-	z-index: 2;
+  border: 0;
+  height: auto;
+  max-width: 100%;
+  z-index: -1;
 }
 
-.ampersand {
-	position: absolute;
-	bottom: 0;
-	color: #bbedff;
-	font-size: 120px;
-	opacity: 0.7;
-	font-weight: bolder;
-	z-index: 1;
-}
-.text2 {
-	position: relative;
-	left: 14%;
-	color: #ffffff;
-	font-size: 45px;
-	font-weight: lighter;
-	text-shadow: 1px 1px 2px rgba(1, 1, 1, 0.15);
-
-}*/
 .articlesWrapper {
-	display: flex;
-	justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
 .articlesWrapper h1 {
-	font-size: 26px;
-	font-weight: 700;
-	color: #6d6e71;
-	padding-bottom: 20px;
+  font-size: 26px;
+  font-weight: 700;
+  color: #6d6e71;
+  padding-bottom: 20px;
 }
-.article1, .article2 {
-	display: flex;
-	font-size: 16px;
-	font-weight: 300;
-	color: #6d6e71;
-	width: 690px;
-	height: 250px;
+.article1,
+.article2 {
+  display: flex;
+  font-size: 16px;
+  font-weight: 300;
+  color: #6d6e71;
+  width: 690px;
+  height: 250px;
 }
-#lamp, #tree {
-	align-self: flex-start;
-	padding-right: 30px;
-	margin-left: 150px;
+#lamp,
+#tree {
+  align-self: flex-start;
+  padding-right: 30px;
+  margin-left: 150px;
 }
 .article2 {
-	height: 150px;
+  height: 150px;
 }
 
 @media screen and (min-width: 320px) and (max-width: 960px) {
-	.articlesWrapper {
-		flex-direction: column;
-	}
-	.article1, .article2 {
-		margin-top: 30px;
-	}
-	nav, .icons {
-		display: none;
-	}
-	.search_ipad {
-		display: block;
-	}
-	header {
-		padding: 0;
-	}
-	.pc {
-		display: none;
-	}
-	.bckg_ipad {
-		display: block;
-		border: 0;
-		height: auto;
-		max-width: 100%;
-		z-index: -1;
-	}
-	.logo_pc {
-		display: none;
-	}
-	.logo_ipad {
-		display: block;
-	}
-	.menu_ipad {
-		display: block;
-	}
-
+  .articlesWrapper {
+    flex-direction: column;
+  }
+  .article1,
+  .article2 {
+    margin-top: 30px;
+  }
+  nav,
+  .icons {
+    display: none;
+  }
+  .search_ipad {
+    display: block;
+  }
+  header {
+    padding: 0;
+  }
+  .pc {
+    display: none;
+  }
+  .bckg_ipad {
+    display: block;
+    border: 0;
+    height: auto;
+    max-width: 100%;
+    z-index: -1;
+  }
+  .logo_pc {
+    display: none;
+  }
+  .logo_ipad {
+    display: block;
+  }
+  .menu_ipad {
+    display: block;
+  }
 }
