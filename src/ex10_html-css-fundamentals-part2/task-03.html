@@ -7,23 +7,35 @@
     <meta name="author" content="Artyom Belyusov" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" href="style-03.css" />
+    <link rel="stylesheet" href="style-03-media.css" />
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
     />
     <title>Adaptive page 4k</title>
   </head>
   <body>
     <header>
       <img class="logo_pc" src="logo.svg" alt="logo" />
-      <img class="menu_ipad" src="menu_ipad.svg" alt="" />
-      <img class="logo_ipad" src="logo_ipad.svg" alt="" />
-      <div class="icons">
-        <img src="phone.svg" alt="" />
-        <img src="divide.svg" alt="" />
-        <img class="navigation_header" src="nav_active.svg" alt="" />
-        <img src="divide.svg" alt="" />
-        <img src="mail.svg" alt="" />
+      <img class="menu_ipad" src="menu_ipad.svg" alt="menu_ipad" />
+      <img class="logo_ipad" src="logo_ipad.svg" alt="logo" />
+      <div class="icons-wrapper">
+        <div class="icon">
+          <img src="phone.svg" alt="" />
+        </div>
+        <div class="icon icon-info">
+          <div class="navigation-info">Saudi Arabia. Alreyadah.</div>
+          <img class="navigation_header" src="nav_active.svg" alt="" />
+        </div>
+        <div class="icon">
+          <img src="mail.svg" alt="" />
+        </div>
       </div>
       <div class="search_ipad">
         <div class="search">
@@ -46,10 +58,33 @@
         <input type="search" placeholder="Type your search words" />
       </div>
     </nav>
-    <div class="background">
-      <img class="pc" src="lazy_background.png" alt="" />
-      <img class="bckg_ipad" src="bg_ipad.png" alt="" />
-    </div>
+    <main class="main">
+      <div class="showcase">
+        <div class="wrap showcase-wrap">
+          <h2>Let's draw some arts</h2>
+          <p><span>&amp;</span>make your business much better</p>
+        </div>
+      </div>
+      <div class="slider">
+        <div class="slider-container">
+          <div class="slider-image">
+            <img src="design1.png" alt="design card" />
+            <div class="slider-like like-green">
+              <i class="fas fa-heart"></i><span>Like</span>
+            </div>
+          </div>
+          <div class="slider-image">
+            <img src="design2.png" alt="design card" />
+            <div class="slider-like like-mustard">
+              <i class="fas fa-heart"></i><span>Like</span>
+            </div>
+          </div>
+          <div class="slider-next">
+            <i class="fas fa-angle-right"></i>
+          </div>
+        </div>
+      </div>
+    </main>
     <div class="articlesWrapper">
       <div class="article">
         <img id="lamp" src="lamp.svg" alt="lamp" class="lamp" />

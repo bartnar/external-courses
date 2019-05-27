@@ -11,6 +11,54 @@ header {
   margin-top: 60px;
 }
 
+.navigation_header {
+  padding: 0 25px 0 25px;
+  border-left: 1px solid #c5c5c6;
+  border-right: 1px solid #c5c5c6;
+}
+
+.icons-wrapper {
+  display: flex;
+  align-items: flex-end;
+}
+.icon-info {
+  display: flex;
+  flex-direction: column;
+  /* width: 200px; */
+}
+
+.icon img {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.icon:hover {
+  cursor: pointer;
+}
+
+/* !navigation-info */
+
+.navigation-info {
+  display: none;
+  text-align: center;
+  padding-top: 13px;
+  margin-bottom: 10px;
+  height: 61px;
+  width: 227px;
+  background: url(back.svg) no-repeat;
+}
+.icon:hover .navigation-info {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 50px;
+  right: 241px;
+}
+
+/* ?hover работает не идеально, есть проблемы с адаптивностью */
+
+/* !navigation-info */
+
 nav {
   display: flex;
   justify-content: space-around;
@@ -50,21 +98,148 @@ a {
   border: none;
 }
 
-.background {
-  width: 100%;
-  display: block;
+.main {
+  background-image: url(background.svg);
+  background-repeat: no-repeat;
+}
+
+/* !showcase */
+.showcase {
+  color: #fff;
+  padding: 282px 0 140px;
+}
+
+.showcase h2,
+.showcase p {
+  margin: 0;
+}
+
+.showcase h2 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  z-index: 2;
+}
+
+.showcase p {
+  font-size: 45px;
+  font-weight: 300;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+  margin-top: -100px;
+  position: relative;
+  left: 40px;
+}
+
+.showcase span {
+  font-weight: bold;
+  font-size: 130px;
+  color: #bbedff;
+  text-shadow: none;
+  padding-right: 10px;
+}
+
+.showcase-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* !showcase */
+
+/* !slider */
+
+.slider {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 auto;
+  max-width: 1200px;
+  min-width: 800px;
+  padding-bottom: 100px;
+}
+
+.slider-container {
+  display: flex;
+  height: 220px;
+}
+
+.slider-image {
+  display: inline-block;
+  width: 320px;
+  height: 100%;
+  overflow: hidden;
   position: relative;
 }
-.pc {
-  border: 0;
-  height: auto;
-  max-width: 100%;
-  z-index: -1;
+
+.slider-image img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  transition: all 0.5s ease-in-out;
 }
+
+.slider-image:hover img {
+  width: calc(100% + 40px);
+  top: -5px;
+  left: -5px;
+  cursor: pointer;
+}
+
+.slider-like {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 65px;
+}
+.like-green {
+  background-color: rgba(138, 202, 81, 0.9);
+  color: rgba(255, 255, 255, 0.8);
+}
+.like-mustard {
+  background: rgba(254, 235, 117, 0.9);
+  color: rgba(204, 152, 0, 0.8);
+}
+
+.slider-like i {
+  font-size: 26px;
+  margin-right: 10px;
+}
+
+.slider-like span {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.slider-next {
+  width: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #f4f4f4;
+  font-size: 60px;
+  color: #d4d4d4;
+}
+
+.slider-next:hover {
+  color: #6d6e71;
+  cursor: pointer;
+}
+
+/* !slider */
+
+/* !article */
 
 .articlesWrapper {
   display: flex;
   justify-content: space-around;
+  padding-bottom: 50px;
 }
 .articlesWrapper h1 {
   font-size: 26px;
@@ -87,6 +262,8 @@ a {
   margin-left: 150px;
 }
 
+/* !article */
+
 /*! iPad section */
 * {
   padding: 0;
@@ -99,13 +276,6 @@ a {
 .menu_ipad {
   display: none;
 }
-.icons {
-  display: flex;
-  align-items: flex-end;
-}
-.icons img {
-  padding-left: 25px;
-}
 .search_ipad {
   display: none;
 }
@@ -113,41 +283,3 @@ a {
   display: none;
 }
 /*! iPad section */
-
-@media screen and (min-width: 800px) and (max-width: 960px) {
-  .articlesWrapper {
-    flex-direction: column;
-  }
-  .article {
-    margin-top: 30px;
-  }
-  nav,
-  .icons {
-    display: none;
-  }
-  .search_ipad {
-    display: block;
-  }
-  header {
-    padding: 0;
-  }
-  .pc {
-    display: none;
-  }
-  .bckg_ipad {
-    display: block;
-    border: 0;
-    height: auto;
-    max-width: 100%;
-    z-index: -1;
-  }
-  .logo_pc {
-    display: none;
-  }
-  .logo_ipad {
-    display: block;
-  }
-  .menu_ipad {
-    display: block;
-  }
-}
