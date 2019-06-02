@@ -1,21 +1,21 @@
 @font-face {
   font-family: Proxima;
-  src: url(fonts/ProximaNovaRegular.otf);
+  src: url(../fonts/ProximaNovaRegular.otf);
 }
 
 @font-face {
   font-family: ProximaBold;
-  src: url(fonts/ProximaNovaBold.otf);
+  src: url(../fonts/ProximaNovaBold.otf);
 }
 
 @font-face {
   font-family: ProximaLight;
-  src: url(fonts/ProximaNovaLight.otf);
+  src: url(../fonts/ProximaNovaLight.otf);
 }
 
 @font-face {
   font-family: FontAwesome;
-  src: url(fonts/FontAwesome.otf);
+  src: url(../fonts/FontAwesome.otf);
 }
 * {
   padding: 0;
@@ -124,7 +124,7 @@ header {
   height: 4px;
   background-color: #181e2c;
   border-top: 1px solid #141824;
-  border-bot: 1px solid #282f41;
+  border-bottom: 1px solid #282f41;
 }
 
 .menu-sidebar {
@@ -300,7 +300,7 @@ header {
   justify-content: center;
   align-items: center;
   color: white;
-  background: url(hover-content-menu.svg) no-repeat 50% 50%;
+  background: url(../images/hover-content-menu.svg) no-repeat 50% 50%;
   background-size: contain;
 }
 
@@ -313,7 +313,7 @@ header {
   padding-left: 15px;
   width: 400px;
   height: 32px;
-  background: url(search-bg.svg) no-repeat;
+  background: url(../images/search-bg.svg) no-repeat;
   border: none;
   outline: none;
 }
@@ -328,7 +328,7 @@ header {
   position: absolute;
   right: 88px;
 }
-.books-wrapper {
+#books-wrapper {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
@@ -358,6 +358,12 @@ header {
   margin-bottom: 30px;
   font-family: "FontAwesome";
   color: #ffab00;
+}
+.rating li {
+  display: inline-block;
+}
+.rating li:hover {
+  cursor: pointer;
 }
 
 /* 
@@ -411,23 +417,23 @@ footer {
   }
 }
 @media screen and (min-height: 0px) and (max-height: 1100px) {
-  .books-wrapper {
+  #books-wrapper {
     height: 400px;
     overflow-y: auto;
   }
 }
 @media screen and (min-width: 1400px) and (max-width: 3500px) {
-  .books-wrapper {
+  #books-wrapper {
     margin-top: 350px;
   }
 }
 @media screen and (min-height: 1100px) and (max-height: 1400px) {
-  .books-wrapper {
+  #books-wrapper {
     margin-top: 100px;
   }
 }
 @media screen and (min-height: 0px) and (max-height: 1100px) {
-  .books-wrapper {
+  #books-wrapper {
     margin-top: 100px;
   }
 }

@@ -5,7 +5,13 @@
     <meta name="description" content="Second task of 10th exercise" />
     <meta name="keywords" content="HTML, CSS, JavaScript, EPAM" />
     <meta name="author" content="Artyom Belyusov" />
-    <link rel="stylesheet" href="library-style.css" />
+    <link rel="stylesheet" href="assets/library-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
     <title>Library</title>
   </head>
   <body>
@@ -15,8 +21,8 @@
         <li><a class="nav-link-a" href="#">Our Support</a></li>
         <li>
           <a class="nav-link-a user-profile" href="#"
-            ><img class="nav-avatar" src="avatar.svg" alt="avatar" /> John Doe
-            <span class="nav-avatar-arrow"></span></a
+            ><img class="nav-avatar" src="images/avatar.svg" alt="avatar" />
+            John Doe <span class="nav-avatar-arrow"></span></a
           >
         </li>
       </ul>
@@ -44,68 +50,7 @@
             </div>
           </nav>
         </section>
-        <section class="books-wrapper">
-          <div class="particular-book-wrapper">
-            <img src="book1.png" alt="" />
-            <div class="title">Jewels of Nizam</div>
-            <div class="author">by Geeta Devi</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book2.png" alt="" />
-            <div class="title">Cakes & Bakes</div>
-            <div class="author">by Geeta Devi</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book3.png" alt="" />
-            <div class="title">Jamie’s Kitchen</div>
-            <div class="author">by Jamie Oliver</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book4.png" alt="" />
-            <div class="title">Inexpensive Family Meals</div>
-            <div class="author">by Simon Holst</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book5.png" alt="" />
-            <div class="title">Paleo Slow Cooking</div>
-            <div class="author">by Chrissy Gower</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book6.png" alt="" />
-            <div class="title">Cook Like an Italian</div>
-            <div class="author">by Tobie Puttock</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book7.png" alt="" />
-            <div class="title">Suneeta Vaswani</div>
-            <div class="author">by Geeta Devi</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book8.png" alt="" />
-            <div class="title">Jamie Does</div>
-            <div class="author">by Jamie Oliver</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book9.png" alt="" />
-            <div class="title">Jamie’s italy</div>
-            <div class="author">by Jamie Oliver</div>
-            <span class="rating"></span>
-          </div>
-          <div class="particular-book-wrapper">
-            <img src="book10.png" alt="" />
-            <div class="title">Vegetables Cookbook</div>
-            <div class="author">by Matthew Biggs</div>
-            <span class="rating"></span>
-          </div>
-        </section>
+        <section id="books-wrapper"></section>
       </div>
 
       <nav class="sidebar">
@@ -182,5 +127,6 @@
         <li><a class="footer-link-a" href="#"></a></li>
       </ul>
     </footer>
+    <script src="src/models/books.js"></script>
   </body>
 </html>
